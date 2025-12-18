@@ -1,0 +1,20 @@
+# .github/workflows/pr-security.yml
+name: PR Security Checks
+
+on:
+  workflow_call:
+
+jobs:
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Security scan"
+
+  code-quality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Code quality"
