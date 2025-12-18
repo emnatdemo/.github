@@ -1,0 +1,16 @@
+name: PR Security Checks
+
+on:
+  pull_request:
+    branches: [main, dev, test, prod]
+  workflow_call:
+
+jobs:
+  validate-pr-workflow-exists:
+    name: Validate PR Workflow Exists
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: test
+        run: echo "testing"
