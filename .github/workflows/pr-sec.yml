@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Security scan"
+      - run: |
+          echo "Security scan"
+          exit 1
 
   code-quality:
     name: Code Quality
