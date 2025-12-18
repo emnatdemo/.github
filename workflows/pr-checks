@@ -8,22 +8,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "🔒 Running Snyk"
+      - run: echo "Running Snyk"
 
   code-quality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "📊 Running SonarQube"
+      - run: echo "Running SonarQube"
 
   linting:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "🔍 Running linters"
+      - run: echo "Running linters"
 
   tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "🧪 Running tests"
+      - run: echo "Running tests"
